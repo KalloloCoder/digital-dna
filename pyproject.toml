@@ -1,0 +1,128 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digital-dna"
+version = "0.1.0"
+description = "Digital DNA MVP - Behavioral Biometrics-Based Identity Verification System"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Digital DNA Team", email = "team@digitaldna.io"}
+]
+keywords = [
+    "behavioral-biometrics",
+    "identity-verification",
+    "security",
+    "anomaly-detection",
+    "federated-learning"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: System :: Monitoring"
+]
+
+dependencies = [
+    "requests>=2.31.0",
+    "dataclasses-json>=0.5.14"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.7.0",
+    "flake8>=6.0.0",
+    "mypy>=1.4.0",
+    "isort>=5.12.0"
+]
+
+ml = [
+    "scikit-learn>=1.3.0",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0"
+]
+
+federated = [
+    "grpcio>=1.57.0",
+    "protobuf>=4.24.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/digitaldna/digital-dna"
+Documentation = "https://digital-dna.readthedocs.io"
+Repository = "https://github.com/digitaldna/digital-dna.git"
+Issues = "https://github.com/digitaldna/digital-dna/issues"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "--strict-markers -v"
+markers = [
+    "unit: Unit tests",
+    "integration: Integration tests",
+    "slow: Slow running tests",
+]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+
+[tool.coverage.run]
+source = ["agent", "generator", "verification", "federated", "policy"]
+omit = [
+    "*/tests/*",
+    "*/__init__.py",
+    "*/main.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
