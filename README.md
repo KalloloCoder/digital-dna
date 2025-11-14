@@ -1,5 +1,5 @@
 <a href="https://freeimage.host/i/f9nl4sV"><img src="https://iili.io/f9nl4sV.md.jpg" alt="f9nl4sV.md.jpg" border="0"></a>
-# Digital DNA MVP
+# Digital DNA v1.0
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.12-blue" />
   <img src="https://img.shields.io/github/tag/KalloloCoder/digital-dna.svg" />
@@ -402,6 +402,7 @@ Untuk questions atau issues:
 
 **Last Updated**: November 14, 2025
 **Version**: MVP 0.1.0
+
 
 
 
