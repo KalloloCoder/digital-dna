@@ -1,4 +1,5 @@
-# Digital DNA MVP - README
+<a href="https://freeimage.host/i/f9nl4sV"><img src="https://iili.io/f9nl4sV.md.jpg" alt="f9nl4sV.md.jpg" border="0"></a>
+# Digital DNA MVP
 
 Selamat datang ke **Digital DNA MVP** - Sistem Identitas Digital Adaptif berbasis Behavioral Biometrics.
 
@@ -388,4 +389,5 @@ Untuk questions atau issues:
 
 **Last Updated**: November 14, 2025
 **Version**: MVP 0.1.0
+
 
