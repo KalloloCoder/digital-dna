@@ -14,7 +14,7 @@
   </a>
 </p>
 
-Selamat datang ke **Digital DNA MVP** - Sistem Identitas Digital Adaptif berbasis Behavioral Biometrics.
+Selamat datang ke **Digital DNA** - Sistem Identitas Digital Adaptif berbasis Behavioral Biometrics.
 
 ## 📋 Daftar Isi
 
@@ -402,6 +402,7 @@ Untuk questions atau issues:
 
 **Last Updated**: November 14, 2025
 **Version**: MVP 0.1.0
+
 
 
 
