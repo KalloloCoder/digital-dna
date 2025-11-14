@@ -401,7 +401,7 @@ Untuk questions atau issues:
 ---
 
 **Last Updated**: November 14, 2025
-**Version**: MVP 0.1.0
+**Version**: 1.0
 
 
 
