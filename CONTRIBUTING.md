@@ -21,7 +21,7 @@ Kami berkomitmen pada inclusive dan respectful community. Semua kontributor haru
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/digital-dna.git
+git clone https://github.com/KalloloCoder/digital-dna.git
 cd digital-dna
 
 # Create virtual environment
@@ -441,7 +441,7 @@ A: It's better to focus on one feature at a time. Create separate branches for d
 A: It's normal! Feedback helps improve code quality. Address comments and push improvements.
 
 ### Q: How do I report security issues?
-A: Email security@digitaldna.io with details. Don't post publicly.
+A: Email muhammadagustriananda@gmail.com with details. Don't post publicly.
 
 ---
 
@@ -460,3 +460,4 @@ Thank you for contributing! 🙏
 
 **Last Updated**: November 14, 2025
 **Version**: 1.0
+
